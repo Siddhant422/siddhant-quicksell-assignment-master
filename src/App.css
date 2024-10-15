@@ -1,0 +1,30 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  width: 100%;
+}
+.boards_container {
+  flex: 1;
+  width: 100vw;
+  overflow-x: auto;
+  padding: 10px 10px;
+}
+.app_boards {
+  display: flex;
+  min-width: fit-content;
+  gap: 30px;
+}
+
+@media(max-width:768px){
+  .boards_container{
+    overflow-y:visible;
+    padding-bottom: 50px;
+  }
+  .app_boards{
+    overflow-y:scroll;
+    flex-direction: column;
+    width:100vw;
+  }
+}
